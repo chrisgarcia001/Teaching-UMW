@@ -1,0 +1,111 @@
+Windows PowerShell
+Copyright (C) 2013 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Administrator> python
+Python 2.7.7 |Anaconda 2.0.1 (64-bit)| (default, Jun 11 2014, 10:40:02) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://binstar.org
+>>> lambda x" 2 * x
+  File "<stdin>", line 1
+    lambda x" 2 * x
+                  ^
+SyntaxError: EOL while scanning string literal
+>>> lambda x: 2 * x
+<function <lambda> at 0x00000000025A2438>
+>>> range(11)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> range(1,11)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> map(lambda x: x*x, range(1,11))
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+>>> from fp import *
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named fp
+>>> exit()
+PS C:\Users\Administrator> cd C:\GitHub\fall_2014_course\baby_python
+PS C:\GitHub\fall_2014_course\baby_python> python
+Python 2.7.7 |Anaconda 2.0.1 (64-bit)| (default, Jun 11 2014, 10:40:02) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://binstar.org
+>>> from fp import *
+>>> ownerify("Chris")
+>>> ownerify("Chris")("xyz")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'NoneType' object is not callable
+>>> from fp import *
+>>> ownerify("Chris")
+>>> exit()
+PS C:\GitHub\fall_2014_course\baby_python> python
+Python 2.7.7 |Anaconda 2.0.1 (64-bit)| (default, Jun 11 2014, 10:40:02) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://binstar.org
+>>> from fp import *
+>>> ownerify("Chris")
+<function <lambda> at 0x00000000024F2438>
+>>> ownerify("Chris")("XYZ")
+"Chris's XYZ"
+>>> f = ownerify("Chris")
+>>> map(f, ["ice cream shop", "trip to alps", "long vacation"])
+["Chris's ice cream shop", "Chris's trip to alps", "Chris's long vacation"]
+>>> g = ownerify("Patrick")
+>>> map(g, ["ice cream shop", "trip to alps", "long vacation"])
+["Patrick's ice cream shop", "Patrick's trip to alps", "Patrick's long vacation"]
+>>> filter(lambda x: x > 5, range(11))
+[6, 7, 8, 9, 10]
+>>> range(11)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> reduce(lambda x, y: x + y, range(1,31, 3))
+145
+>>> reduce(lambda x, y: x + y, [])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: reduce() of empty sequence with no initial value
+>>> reduce(lambda x, y: x + y, [0])
+0
+>>> exit()
+PS C:\GitHub\fall_2014_course\baby_python> python
+Python 2.7.7 |Anaconda 2.0.1 (64-bit)| (default, Jun 11 2014, 10:40:02) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://binstar.org
+>>> from fp import *
+>>> fsum(range(1,11))
+55
+>>> fsum([1,2,3])
+6
+>>> range(1,11)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> exit()
+PS C:\GitHub\fall_2014_course\baby_python> python
+Python 2.7.7 |Anaconda 2.0.1 (64-bit)| (default, Jun 11 2014, 10:40:02) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://binstar.org
+>>> from fp import *
+>>> fprod([1,2,3])
+6
+>>> fprod([1,2,3,4])
+24
+>>> fprod([1,2,3,4,5])
+120
+>>> exit()
+PS C:\GitHub\fall_2014_course\baby_python> python
+Python 2.7.7 |Anaconda 2.0.1 (64-bit)| (default, Jun 11 2014, 10:40:02) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://binstar.org
+>>> from fp import *
+>>> fac(3)
+6
+>>> fac(20)
+2432902008176640000L
+>>> zip([1,2,3],[4,5,6],[7,8,9])
+[(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+>>> zip([1,2,3],[4,5,6],[7,8,9,10])
+[(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+>>>

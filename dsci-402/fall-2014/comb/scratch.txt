@@ -1,0 +1,12 @@
+CP(L1, L2, L3, ....,Ln):
+	if no lists L1...Ln:
+		return []
+	if only L1:
+		return map(lambda x: [x], L1)
+	else:
+		rest = CP(L2...Ln)
+		CPs = []
+		for i in L1:
+			for j in L2:
+				CPs.append([i,j])
+	return CPs			

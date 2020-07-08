@@ -1,0 +1,220 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Administrator>cd c:\GitHub\dsci_401
+
+c:\GitHub\dsci_401>python
+Python 2.7.13 |Anaconda 4.4.0 (64-bit)| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://anaconda.org
+>>> (lambda x: x + 3)(5)
+8
+>>> map(lambda x: 'Hi ' + str(x) + '!', ['Jack', 'Jill', 'Joe', 'John'])
+['Hi Jack!', 'Hi Jill!', 'Hi Joe!', 'Hi John!']
+>>> max
+<built-in function max>
+>>> max([2,4,1,9,5])
+9
+>>> exit()
+
+c:\GitHub\dsci_401>python test_bs.py
+8
+10
+15
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+[1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40, 43, 46, 49]
+[1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49]
+[1, 4, 7, 10]
+*
+**
+***
+
+
+
+*
+**
+***
+****
+*****
+
+
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+{'a': 1, 'x': 2, 2: 2, 3: 1}
+{'a': 1, 'tonight': 1, 'name': 1, 'for': 1, 'be': 1, 'this': 1, 'text': 1, 'is': 2, 'extra-special': 1, 'sample': 1, 'will': 1, 'dinner': 1, 'file': 1, 'chris': 1, "i'm": 1, 'my': 1, 'having': 1, 'pizza': 1}
+9
+
+c:\GitHub\dsci_401>python
+Python 2.7.13 |Anaconda 4.4.0 (64-bit)| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://anaconda.org
+>>> x = 3 if 5 > 4 else 2
+>>> x
+3
+>>> x = 3 if 5 < 4 else 2
+>>> x
+2
+>>> (lambda x,y: x + y)(3, 4)
+7
+>>> reduce(lambda x,y: x + y, [1, 1, 1, 1, 1])
+5
+>>> reduce(lambda x,y: x + y, range(1,101))
+5050
+>>> my_sum: lambda elts: reduce(lambda x,y: x + y, elts)
+  File "<stdin>", line 1
+    my_sum: lambda elts: reduce(lambda x,y: x + y, elts)
+          ^
+SyntaxError: invalid syntax
+>>> my_sum = lambda elts: reduce(lambda x,y: x + y, elts)
+>>> my_sum(range(1,101))
+5050
+>>> my_sum([5,5,5,5,5])
+25
+>>> reduce(lambda x,y: x + y, range(1,101))
+5050
+>>> range(1,101)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+>>> reduce(lambda x,y: x * y, range(1,101))
+93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000L
+>>> nums = [73, 14, 112, 22, 62, 4, 0]
+>>> nums
+[73, 14, 112, 22, 62, 4, 0]
+>>> reduce(lambda x:y, x if x >= y else y, nums)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'y' is not defined
+>>> reduce(lambda x,y: x if x >= y else y, nums)
+112
+>>> my_sum = lambda elts: reduce(lambda x,y: x + y, elts)
+>>> my_product = lambda elts: reduce(lambda x,y: x * y, elts)
+>>> my_max = lambda elts: reduce(lambda x, y: x if x >= y else y, elts)
+>>> my_max(nums)
+112
+>>> my_min = lambda elts: reduce(lambda x, y: x if x < y else y, elts)
+>>> my_min(nums)
+0
+>>> sum([1,2,3])
+6
+>>> sum(1,2,3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: sum expected at most 2 arguments, got 3
+>>> max
+<built-in function max>
+>>> max([1,2,3])
+3
+>>> max(1,2,3,4,5)
+5
+>>> max(1,2,3,4,5,6,7,8)
+8
+>>> exit()
+
+c:\GitHub\dsci_401>python test_bs.py
+8
+10
+15
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+[1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40, 43, 46, 49]
+[1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49]
+[1, 4, 7, 10]
+*
+**
+***
+
+
+
+*
+**
+***
+****
+*****
+
+
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+{'a': 1, 'x': 2, 2: 2, 3: 1}
+{'a': 1, 'tonight': 1, 'name': 1, 'for': 1, 'be': 1, 'this': 1, 'text': 1, 'is': 2, 'extra-special': 1, 'sample': 1, 'will': 1, 'dinner': 1, 'file': 1, 'chris': 1, "i'm": 1, 'my': 1, 'having': 1, 'pizza': 1}
+9
+Traceback (most recent call last):
+  File "test_bs.py", line 31, in <module>
+    print(variable_number_of_inputs(2, 3))
+NameError: name 'variable_number_of_inputs' is not defined
+
+c:\GitHub\dsci_401>python test_bs.py
+8
+10
+15
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+[1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40, 43, 46, 49]
+[1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49]
+[1, 4, 7, 10]
+*
+**
+***
+
+
+
+*
+**
+***
+****
+*****
+
+
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+{'a': 1, 'x': 2, 2: 2, 3: 1}
+{'a': 1, 'tonight': 1, 'name': 1, 'for': 1, 'be': 1, 'this': 1, 'text': 1, 'is': 2, 'extra-special': 1, 'sample': 1, 'will': 1, 'dinner': 1, 'file': 1, 'chris': 1, "i'm": 1, 'my': 1, 'having': 1, 'pizza': 1}
+9
+A is 2
+B is 3
+None
+A is 2
+B is 3
+  Next Optional Input: 4
+  Next Optional Input: 5
+  Next Optional Input: 6
+  Next Optional Input: Something
+  Next Optional Input: Else
+None
+
+c:\GitHub\dsci_401>git commit -a -m "Adding examples"
+[master 73fef22] Adding examples
+ 2 files changed, 19 insertions(+), 2 deletions(-)
+
+c:\GitHub\dsci_401>git push origin master
+Counting objects: 4, done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 713 bytes | 713.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/chrisgarcia001/DSCI-401B.git
+   3c3b322..73fef22  master -> master
+
+c:\GitHub\dsci_401>

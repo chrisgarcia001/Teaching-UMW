@@ -1,0 +1,66 @@
+Windows PowerShell
+Copyright (C) 2013 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Administrator> cd C:\GitHub\dsci_402_couse_repo\baby_python
+PS C:\GitHub\dsci_402_couse_repo\baby_python> dir
+
+
+    Directory: C:\GitHub\dsci_402_couse_repo\baby_python
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---          9/8/2015   4:45 PM        297 first_code.py
+-a---          9/8/2015   4:24 PM        177 first_module.py
+-a---          9/8/2015   4:25 PM        602 first_module.pyc
+-a---          9/3/2015   4:42 PM       6375 python_shell_9.3.2015.txt
+-a---          9/8/2015   4:28 PM        279 test.py
+
+
+PS C:\GitHub\dsci_402_couse_repo\baby_python> python
+Python 2.7.8 |Anaconda 2.1.0 (64-bit)| (default, Jul  2 2014, 15:12:11) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://binstar.org
+>>> inc
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'inc' is not defined
+>>> inc = lambda x: x + 1
+>>> inc(4)
+5
+>>> inc(6)
+7
+>>> (lambda x: x + 2)(2)
+4
+>>> (lambda x,y,z: x + y + z)(2, 3, 4)
+9
+>>> nums = range(5, 51, 2)
+>>> nums
+[5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49]
+>>> map(lambda x: x  + 3, nums)
+[8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52]
+>>> map(inc, nums)
+[6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50]
+>>> names = ['chris','alex','hannah','anna','ruth']
+>>> map(lambda x: "Hi " + x + "!", names)
+['Hi chris!', 'Hi alex!', 'Hi hannah!', 'Hi anna!', 'Hi ruth!']
+>>> reduce(lambda x, y: x + y, range(0, 21))
+210
+>>> range(0, 21)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+>>> max
+<built-in function max>
+>>> mmax = lambda nums: reduce(lambda x, y: x if x > y else y, nums), nums
+>>> mmax = lambda nums: reduce(lambda x, y: x if x > y else y, nums)
+>>> mmax([6,2,1,9,3])
+9
+>>> 3 if 4 < 5 else 2
+3
+>>> nums = range(-15, 16)
+>>> nums
+[-15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+>>> filter(lambda x: x > 0, nums)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+>>>

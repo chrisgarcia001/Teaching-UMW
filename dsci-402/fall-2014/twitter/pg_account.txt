@@ -1,0 +1,4 @@
+access_token = 2753133962-EDkrbTokO1a2rSOC5XoKeWkMWuJVt5XQNPfAURm
+access_token_secret = 6SXYGtM27saKboUe7xQwAPIvEBEMPgC189EnVubhNj6e7
+consumer_key = Ew5YqI7MPL7XH4YfAr1BLvY9A
+consumer_secret = ezZrkRMGk8nCBx3HQWcNMCMlKBAoMnEGWeFnfyCtEyrwKnNRIw

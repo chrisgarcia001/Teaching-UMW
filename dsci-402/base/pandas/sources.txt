@@ -1,0 +1,11 @@
+Baseball: http://www.exploredata.net/Downloads/Baseball-Data-Set
+Austrailian Trade CSV: https://data.gov.au/dataset/country-and-commodity-trade-data-file
+
+--- DATA SOURCES ----------------
+R Data Sets: https://github.com/vincentarelbundock/Rdatasets
+Austrailian CSV's: https://data.gov.au/dataset?res_format=CSV
+
+--- TUTORIALS -------------------
+Pandas tutorial: http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/
+GREAT tutorial: http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/
+Statistical Pandas Tutorial: http://www.randalolson.com/2012/08/06/statistical-analysis-made-easy-in-python/

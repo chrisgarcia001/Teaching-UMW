@@ -1,0 +1,155 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Administrator>cd c:\GitHub
+
+c:\GitHub>dir
+ Volume in drive C is Windows
+ Volume Serial Number is A8A6-CBB7
+
+ Directory of c:\GitHub
+
+09/06/2017  02:40 PM    <DIR>          .
+09/06/2017  02:40 PM    <DIR>          ..
+09/09/2017  09:34 AM    <DIR>          dsci_401
+               0 File(s)              0 bytes
+               3 Dir(s)  15,210,758,144 bytes free
+
+c:\GitHub>cd C:\GitHub\dsci_401_course_repo
+
+C:\GitHub\dsci_401_course_repo>git init
+Initialized empty Git repository in C:/GitHub/dsci_401_course_repo/.git/
+
+C:\GitHub\dsci_401_course_repo>git remote add origin https://github.com/chrisgarcia001/DSCI-401B.git
+
+C:\GitHub\dsci_401_course_repo>git pull origin master
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 9 (delta 0), reused 9 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/chrisgarcia001/DSCI-401B
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+C:\GitHub\dsci_401_course_repo>python
+Python 2.7.13 |Anaconda 4.4.0 (64-bit)| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://anaconda.org
+>>> exit()
+
+C:\GitHub\dsci_401_course_repo>python
+Python 2.7.13 |Anaconda 4.4.0 (64-bit)| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://anaconda.org
+>>> exit()
+
+C:\GitHub\dsci_401_course_repo>cd C:\GitHub\dsci_401
+
+C:\GitHub\dsci_401>dir
+ Volume in drive C is Windows
+ Volume Serial Number is A8A6-CBB7
+
+ Directory of C:\GitHub\dsci_401
+
+09/09/2017  09:34 AM    <DIR>          .
+09/09/2017  09:34 AM    <DIR>          ..
+09/08/2017  02:40 PM                23 hello_world.py
+09/09/2017  09:34 AM               123 hello_world.pyc
+09/08/2017  02:13 PM               126 README.md
+               3 File(s)            272 bytes
+               2 Dir(s)  14,459,596,800 bytes free
+
+C:\GitHub\dsci_401>git add *
+
+C:\GitHub\dsci_401>dir
+ Volume in drive C is Windows
+ Volume Serial Number is A8A6-CBB7
+
+ Directory of C:\GitHub\dsci_401
+
+09/11/2017  02:32 PM    <DIR>          .
+09/11/2017  02:32 PM    <DIR>          ..
+09/11/2017  02:33 PM                 7 .gitignore
+09/08/2017  02:40 PM                23 hello_world.py
+09/09/2017  09:34 AM               123 hello_world.pyc
+09/08/2017  02:13 PM               126 README.md
+               4 File(s)            279 bytes
+               2 Dir(s)  14,459,179,008 bytes free
+
+C:\GitHub\dsci_401>git commit -a -m "Adding gitignore"
+[master a6fedd5] Adding gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+C:\GitHub\dsci_401>git push origin master
+Counting objects: 3, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 321 bytes | 321.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/chrisgarcia001/DSCI-401B.git
+   33fb9da..a6fedd5  master -> master
+
+C:\GitHub\dsci_401>python hello_world.py
+Hello World!
+
+C:\GitHub\dsci_401>python
+Python 2.7.13 |Anaconda 4.4.0 (64-bit)| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://anaconda.org
+>>> 4+3
+7
+>>> 4 + 3
+7
+>>> ((16 / 2.5) + 12) / (8 * 3.1)
+0.7419354838709676
+>>> 3 ** 2
+9
+>>> 3 ** 3
+27
+>>> 9 ** 0.5
+3.0
+>>> x = 12
+>>> y = 3.71
+>>> x
+12
+>>> y
+3.71
+>>> x + (2 * y)
+19.42
+>>> a = [1, 3, 5, 7, 9]
+>>> b = [2, 'xyz', 3.1, 'abcd']
+>>> a
+[1, 3, 5, 7, 9]
+>>> b
+[2, 'xyz', 3.1, 'abcd']
+>>> a + b
+[1, 3, 5, 7, 9, 2, 'xyz', 3.1, 'abcd']
+>>> b + a
+[2, 'xyz', 3.1, 'abcd', 1, 3, 5, 7, 9]
+>>> len(a)
+5
+>>> a
+[1, 3, 5, 7, 9]
+>>> len(a)
+5
+>>> len(b)
+4
+>>> b
+[2, 'xyz', 3.1, 'abcd']
+>>> len(a + b)
+9
+>>> a
+[1, 3, 5, 7, 9]
+>>> a.append(11)
+>>> a
+[1, 3, 5, 7, 9, 11]
+>>> a + [13]
+[1, 3, 5, 7, 9, 11, 13]
+>>> a + 13
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate list (not "int") to list
+>>>
